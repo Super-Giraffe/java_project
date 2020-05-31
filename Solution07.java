@@ -7,7 +7,7 @@ package LeetCode;
 public class Solution07 {
     public boolean isSymmetric(TreeNode root) {
         if (root == null){
-            return false;
+            return true;
         } else {
             if (root.left == null && root.right == null){
                 return true;
