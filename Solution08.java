@@ -1,5 +1,9 @@
 package LeetCode;
 
+/**
+ * 题目：树的子结构
+ */
+
 public class Solution08 {
     public boolean isSubStructure(TreeNode A, TreeNode B) {
         return (A != null && B != null) && (recur(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B));
