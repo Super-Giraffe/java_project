@@ -36,15 +36,6 @@ public class Solution29 {
                 //当当前层的节点都遍历完后进入下一层，即将下一层的节点数设置为当前层的节点数，下一层节点数清零，并重新创建一个Lits记录数据
                 if (nowNum == 0){
                     if (layer % 2 == 0){
-//                        int i = 0;
-//                        int j = list.size() - 1;
-//                        while (i < j){
-//                            int temp = list.get(i);
-//                            list.set(i, list.get(j));
-//                            list.set(j, temp);
-//                            i++;
-//                            j--;
-//                        }
                         Collections.reverse(list);
                     }
                     res.add(list);
