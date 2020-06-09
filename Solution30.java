@@ -9,11 +9,9 @@ package LeetCode;
 
 public class Solution30 {
     public int translateNum(int num) {
-        int res = 0;
         String str = Integer.toString(num);
         char[] c = str.toCharArray();
-        res = isWord(c, 0, false) + isWord(c, 0, true);
-        return res;
+        return isWord(c, 0, false) + isWord(c, 0, true);
     }
     public int isWord(char[] num, int start, boolean len){
         if (len){
