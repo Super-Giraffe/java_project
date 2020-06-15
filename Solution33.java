@@ -1,5 +1,9 @@
 package LeetCode;
 
+/**
+ * 最长回文子串(动态规划)
+ */
+
 public class Solution33 {
     public String longestPalindrome(String s) {
         if (s.length() == 0){
