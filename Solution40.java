@@ -1,30 +1,10 @@
 package LeetCode;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 /**
  * 题目：数组中的第k个最大元素，不去重
  */
 
 public class Solution40 {
-    public int findKthLargest(int[] nums, int k) {
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            list.add(nums[i]);
-        }
-        Collections.sort(list);
-        return list.get(nums.length - k);
-    }
-    public static void main(String[] args) {
-        int[] nums = new int[]{3,2,3,1,2,4,5,5,6};
-        int res = new Solution40().findKthLargest(nums, 4);
-        System.out.println(res);
-    }
-}
-/*
-    堆排序的解法：
+    //堆排序的解法：
     public int findKthLargest(int[] nums, int k) {
         int heapSize = nums.length;
         buildMaxHeap(nums, heapSize);
@@ -61,4 +41,9 @@ public class Solution40 {
         a[i] = a[j];
         a[j] = temp;
     }
-*/
+    public static void main(String[] args) {
+        int[] nums = new int[]{3,2,3,1,2,4,5,5,6};
+        int res = new Solution40().findKthLargest(nums, 4);
+        System.out.println(res);
+    }
+}
